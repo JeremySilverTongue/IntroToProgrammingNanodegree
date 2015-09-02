@@ -22,7 +22,8 @@ h1 {
 .vocab {
     background-color: LightGray;
     border-radius: 3px;
-    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
     font-weight: bold;
 }
 
