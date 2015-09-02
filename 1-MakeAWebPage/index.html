@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jeremy's Notes!</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1 id="title">Jeremy's IPND Project 1 Notes</h1>
+    <p class="abstract"> Please enjoy my thoughts on the basics of front end web concepts. I have highlighted various interesting <span class="vocab">vocabulary</span> words below. </p>
+
+
+    <figure id="kittlefish-figure">
+        <img id="kittlefish"
+            src="images/kittlefish.jpg"
+            alt="The power of kittlefish compels you">
+        <figcaption id="kittlefishCaption">
+            I'm skeptical that kittlefish knows any JavaScript...
+        </figcaption>
+    </figure>
+
+    <article>
+        <h2> Structured Documents </h2>
+        <p> It might not look like it, but this document is actually a tree. In addition to the content (the words you're reading right now), the HTML used to generate this webpage contains <span class="vocab">markup</span> that specifies the semantics of each portion of the document. Wikipedia defines a structured document as follows:</p>
+
+        <blockquote><p>A structured document is an electronic document where some method of embedded coding, such as mark-up, is used to give the whole, and parts, of the document various structural meanings according to a schema.</p></blockquote>
+
+        <p> Note that this definition is stating that each portion of a structured document has <span class="vocab">meta-data</span> that states what that portion of the document is, not necessarily what to do with it, or how to display it. </p>
+
+        <p> A structured document follows the rules of a formal grammar. In the case of HTML, a <span class="vocab">context free grammar</span> suffices to define the language. A discussion of formal grammars is beyond the scope of this article, and beyond the scope of this Nanodegree, it seems. It is useful to keep in mind, however, that the tantrums that computers throw when they encounter syntactical errors is simply because they are attempting to parse our input with a very limited and fickle mind.</p>
+    </article>
+
+    <article>
+        <h2> Don't Repeat Yourself </h2>
+
+        <p> It seems a little silly to discuss DRY while writing in a language that doesn't have anything like <span class="vocab">macro expansion</span>. Sigh. Yet another way I discover that <span class="vocab">LaTeX</span> is amazing. Anyway.</p>
+
+        <p> Say we're working in assembly, and we need to execute some set of instructions multiple times. We could either create a loop with a counter and conditional jump, or we could "unroll" the loop by simply copying and pasting multiple copies of our code block. Which is the better choice? The latter might be faster, but the former is easier to understand, keeps our source shorter, and allows us to change the behavior of the loop by editing in one place, instead of all the unrolled copies. This is a simple case of the much more general principal in computer science that you should do your utmost to never repeat yourself.</p>
+
+        <p> There are three reasons why it's a good idea not to repeat yourself. First. It facilitates code reuse. If you take every opportunity you can to factor common behavior out into useful objects and functions, you build up a library of useful constructs you can build into your future creations. Second, it makes changes and bug fixing vastly easier. Instead of a bug being repeated all over your code base, if you don't repeat yourself, that means there's only one place to fix a bug. </p>
+
+        <p> Finally, the constraint to not repeat yourself (and by extension, not repeat functionality) leads to better program architecture through separation of concerns, single responsibility principal, and proper isolation of cross-cutting concerns.</p>
+    </article>
+
+    <article>
+        <h2> HTML </h2>
+
+        <p> Hypertext markup language is used to specify the content of a webpage, along with semantic markup. HTML documents are made up of <span class="vocab">elements</span>, delineated by tags. These tags can also carry attributes specifying meta-data about the element.</p>
+
+        <p> When documents written in markup languages are rendered, they first have to be turned into a structure of live objects in memory. In HTML, this is called the document object model, or DOM. In Android, where views are defined by XML, they are "inflated" to a view hierarchy. iOS takes a different tack. Layouts are again defined in XML, but instead of being inflated at runtime, they're inflated at compile time, and the resulting object hierarchy is serialized. Then at runtime the objects are revived, and the XML is never touched. Which approach is best? It's up to you to decide.</p>
+    </article>
+
+    <article>
+        <h2> CSS </h2>
+
+        <p> CSS stands for cascading style sheets, and it's the preferred method for styling webpages. Various DOM elements can have different properties that affect how the browser renders them. For instance, a <span class="vocab"><code>div</code></span> has a <code>background-color</code> property, and that property can be set to any RGB color, or one of many named colors. This doesn't change the structure of the document. It merely changes how the document is rendered. </p>
+
+        <p> There are three main reasons CSS is used to compliment HTML. First is simple separation of concerns. It is almost always vastly more efficient to consider a document's content and presentation separately. These two tasks are often best suited to different people within an organization. When a single person is working on both content and styling, separation of concerns allows the critical content to be focused on and finished, before work is done on presentation. </p>
+
+        <p> CSS facilitates the DRY principal. both within documents, and across documents. Without CSS, styles would need to be applied to tags individually, with great repetition, introducing all the fragility that repetition entails. Additionally, CSS can often be used across multiple pages in the same site, further facilitating reuse. </p>
+
+        <p> Finally, including styling in HTML documents would make HTML even less human readable than it already is.</p>
+    </article>
+
+
+    <article>
+        <h2> Hipster Ipsum </h2>
+
+        <p> Swag YOLO pork belly beard master cleanse. Semiotics food truck blog DIY butcher, mumblecore flannel letterpress viral Etsy pop-up cornhole fanny pack. Helvetica jean shorts <span class="vocab">meggings</span>, selvage skateboard narwhal aesthetic. Crucifix tattooed Pinterest Tumblr, taxidermy forage gentrify butcher +1 mixtape. Vice listicle chia, craft beer locavore brunch <span class="vocab">umami</span> 3 wolf moon selvage Marfa dreamcatcher leggings. You probably haven't heard of them chia sartorial deep v tousled messenger bag. Banksy direct trade DIY 8-bit Austin, sustainable beard. </p>
+    </article>
+
+    <article>
+        <h2> Lorem Gibson </h2>
+
+        <p> Order-flow human neon city crypto- <span class="vocab">franchise</span> neural euro-pop tower. cyber- skyscraper office sign fluidity chrome shrine free-market realism. uplink tiger-team range-rover long-chain hydrocarbons crypto- -ware systema skyscraper nodality. systemic camera physical San Francisco tanto skyscraper skyscraper Legba chrome. rebar apophenia systemic shrine paranoid 3D-printed bomb neural man. modem girl pistol computer rebar smart- Chiba geodesic futurity. </p>
+
+        <p> Carbon construct spook San Francisco spook boat San Francisco nodality shanty town. military-grade beef noodles crypto- drone grenade man post- shrine dead. digital futurity claymore mine convenience store carbon nano- chrome -space corrupted. drugs A.I. <span class="vocab">long-chain hydrocarbons</span> savant into face forwards tube San Francisco construct. tank-traps bomb artisanal urban table Kowloon convenience store boat city. nodality sub-orbital monofilament Shibuya systemic rain sentient uplink bomb. </p>
+    </article>
+
+
+</body>
+</html>

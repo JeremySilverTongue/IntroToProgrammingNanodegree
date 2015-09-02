@@ -1,0 +1,32 @@
+#kittlefish-figure{
+    background-color: LightGray;
+    border-radius: 3px;
+    float: right;
+    width: 200px;
+    padding: 10px;
+}
+
+#kittlefish{
+    width: 200px;
+}
+
+#kittlefishCaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.vocab {
+    background-color: LightGray;
+    border-radius: 3px;
+    padding: 1px;
+    font-weight: bold;
+}
+
+.abstract{
+    width: 75%;
+    margin: auto;
+}
