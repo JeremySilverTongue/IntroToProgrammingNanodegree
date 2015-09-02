@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    border-radius: 3px;
+}
+
+.concepts-container {
+    display: flex;
+    width : 90%;
+    padding : 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: LightGray;
+    border-radius: 3px;
+    flex-wrap: wrap;
+}
+
+.concept {
+    min-width: 200px;
+    flex: 1 0 200px;
+    margin : 5px;
+    padding : 10px;
+    padding-top: 0px;
+    border-radius: 3px;
+    background-color: gray;
+    color: black;
+}
