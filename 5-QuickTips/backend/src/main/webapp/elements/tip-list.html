@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+
+<dom-module id="tip-list">
+    <style>
+        paper-card {
+            margin : 10px;
+            width: 300px;
+        }
+    </style>
+    <template>
+        <template is="dom-repeat" items="{{tips}}">
+            <paper-card heading={{item.title}}>
+                <div class="card-content">{{item.content}}</div>
+            </paper-card>
+            <!--<quick-tip title="[[item.title]]" content="[[item.content]]"></quick-tip>-->
+        </template>
+    </template>
+    <script>
+		Polymer({
+			is: 'tip-list',
+			properties: {
+				tips: {
+					type: Array,
+					value: [],
+					notify: true,
+					reflectToAttribute: true
+				}
+			},
+
+			load: function(tipsArray){
+			    this.tips = [];
+			    var that = this;
+			    tipsArray.forEach(function(item){
+			        console.log("Inside the list, trying to add an element")
+			        console.log(item)
+			        that.push("tips",item)
+
+			    });
+			}
+		});
+	</script>
+</dom-module>
