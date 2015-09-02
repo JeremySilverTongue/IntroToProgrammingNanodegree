@@ -1,0 +1,41 @@
+[
+    {
+        "title" : "Object Oriented Programming",
+        "summary" : "A basic discussion of OOP concepts. Details how the fundamental insight of object oriented programming is that it's a really good idea to keep data packaged together with the functions that will act on that data. Also explores encapsulation and data hiding, discussing how the clients of an object should communicate only through well defined interfaces. Includes a discussion of maintainability, and how separation of concerns and loose coupling allows for different parts of a system to be worked on independently. Also addresses the distinction between classes and objects.",
+        "youtubeVideoId" : "SZqLEDH0x7A"
+    },
+    {
+        "title" : "Java Programming",
+        "summary" : "Discusses the syntax for creating classes and objects in Java, as well as field and method access controls. Also discusses inheritance and the inheritance vs composition trade off.",
+        "youtubeVideoId" : "WPvGqX-TXP0"
+    },
+    {
+        "title" : "Computer programming: What is object-oriented language?",
+        "summary" : "Discusses the distinction between procedural and object-oriented languages. Describes how the aim of OOP is to create a domain model that mirrors the reality of the problem at hand. Does a survey of widely used object-oriented languages.",
+        "youtubeVideoId" : "SS-9y0H3Si8"
+    },
+    {
+        "title" : "What Is a Class?",
+        "summary" : "Kunal drops logic bombs about the distinction between classes and instances.",
+        "youtubeVideoId" : "vSznJAwSd78"
+    },
+    {
+        "title" : "Python Class and Object",
+        "summary" : "Explores how there are no primitive data types in Python, but rather everything, including all numbers, are objects.",
+        "youtubeVideoId" : "AaIdperUu-A"
+    },
+    {
+        "title" : "Python Tutorial - Classes, Interfaces, Abstract Methods, & Overriding",
+        "summary" : "Discusses how to use the Python ABC, or abstract base class, module to create interfaces in Python. Python is interesting in that is doesn't have interfaces, but it does have multiple inheritance, which can do that same thing. Interfaces are useful when you want to specify a communication contract between two components of your project, but don't want to get inheritance into the mix. ",
+        "youtubeVideoId" : "Nyn2dylpPDE"
+    },
+    {
+        "title" : "Python Tutorial - Classes and Double Underscore Functions",
+        "summary" : "A discussion of how to hook into Python operators and syntax using magic methods on classes.",
+        "youtubeVideoId" : "GYLKYRi0N0M"
+    }
+
+
+
+
+]

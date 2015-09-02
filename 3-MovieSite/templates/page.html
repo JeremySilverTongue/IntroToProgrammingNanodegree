@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Jeremy's OOP Videos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-6 col-lg-4 movie-tile">
+        <h2> Welcome to My Project 4 Submission!</h2>
+        <p>For this project I chose to extend the Fresh Tomatoes site from Programming Foundations with Python. I changed the data storage to JSON, and I'm using Jinja2 for templating, instead of just using Python's native string formatting. I've also done my best to modularize the code I pulled from Fresh Tomatoes.</p>
+        <p>Check out my notes on a bunch of OOP-related videos!</p>
+      </div>
+{% for video in data %}
+{% include "video.html" %}
+{% endfor %}
+      <div class="col-md-6 col-lg-4 movie-tile">
+      <h2> Supplemental Notes.</h2>
+      <p> Just wanted to make sure I tick all the content boxes on the rubric.</p>
+      <dl>
+        <dt>Object Oriented Programming</dt>
+        <dd> OOP stands in contrast with procedural or functional programming, though the styles can intermix. The fundamental notion of OOP is that there are many advantages to be had by bundling functions together with the data they act on. Instead of dumb structs, we have intelligent, self contained objects. This encapsulation allows objects to be reasoned about in isolation, and allows clients of objects to view the object as a black box. This encapsulation leads to a program that is easier to think about, and also leads to an easy algorithm for how to break down a complex project: simply determine the objects that the overall project is build out of, create each object, then wire them together.</dd>
+        <dt> Object </dt>
+        <dd> A bundle of data and methods to act on that data.</dd>
+        <dt> Class </dt>
+        <dd> A blueprint specifying how to create objects of a particular type.</dd>
+        <dt> Instance </dt>
+        <dd> An object build from a particular class </dd>
+        <dt> Method </dt>
+        <dd> A function that is bundled into an object. </dd>
+        <dt> Module </dt>
+        <dd> This means different things to different people, but generally it means some component of a larger system that has has a well defined interface such that it can be reused across project. </dd>
+        <dt> Library </dt>
+        <dd> A library is a non-volatile set of resources that provide some functionality through a well defined interface in such a way that it can be easily integrated into new projects. </dd>
+        <dt> Class Variables </dt>
+        <dd> As opposed to an instance variable, only a single copy of a class variable exists, no matter how many instances of the class have been created. Also known as static member variables. </dd>
+        <dt> Inheritance </dt>
+        <dd> Inheritance is one method for extending the functionality of a class. When making a subclass, one guarantees that the subclass will behave in a way compatible with the superclass. Unless you need to do some polymorphic weirdness, it's almost always inferior to simple composition. </dd>
+        <dt> Method overriding </dt>
+        <dd> Subclasses can add new methods, but they can also override methods supplied by a superclass. </dd>
+
+      </dl>
+    </div>
+    <div class="col-md-6 col-lg-4 movie-tile">
+      <h2> Abstract Thinking</h2>
+      <p> I honestly have no idea what's expected of me here. But I'll take a crack at it... OOP kinda has something to do with CSS classes, but not really. CSS classes has a lot more to do with aspect-oriented programming. CSS classes allow for centralization of cross-cutting concerns. </p>
+      <p> Uhh. The first time I feel like I really <em> got </em> OOP was when I was writing an OpenGL theme park in Objective-C, and I could actually see each instance of each class I was making, since they had graphical representations. </p>
+      <p> There's a very interesting distinction between the sort of introductory OOP we did in this class, and how OOP is used in practice, where we're usually using behemoth classes and overriding some tiny fraction of all available methods. The difference between a little Java Bean and the Activity class form the Android framework would blow your mind. </p>
+      <p> Uh. What was I talking about again? I don't know. I'm being abstract. I hope this works.</p>
+    </div>
+  </body>
+</html>
